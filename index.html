@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catalogo de TCCs | BCC SENAC</title>
+    <meta
+      name="description"
+      content="Catalogo de Trabalhos de Conclusao de Curso do Bacharelado em Ciencia da Computacao - SENAC SP"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Space+Grotesk:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape--a" aria-hidden="true"></div>
+    <div class="bg-shape bg-shape--b" aria-hidden="true"></div>
+
+    <main class="container">
+      <header class="hero">
+        <div class="hero__content">
+          <img
+            class="hero__logo"
+            src="https://fractaldata.com.br/bcc/assets/bcc.png"
+            alt="Logotipo do curso de Ciencia da Computacao"
+            loading="lazy"
+          />
+          <div class="hero__text">
+            <p class="hero__badge">BCC SENAC - TCCs</p>
+            <h1 class="hero__title">Biblioteca digital de TCCs</h1>
+            <p class="hero__subtitle">
+              Consulte os trabalhos de conclusao do curso de Ciencia da Computacao.
+              Busque por palavras no titulo e abra o PDF em um clique.
+            </p>
+          </div>
+        </div>
+      </header>
+
+      <section class="search-panel" aria-label="Busca de trabalhos">
+        <label for="searchInput" class="search-panel__label">Buscar por titulo</label>
+        <div class="search-panel__controls">
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Ex.: redes neurais, blockchain, deteccao"
+            autocomplete="off"
+          />
+          <button id="clearButton" type="button">Limpar</button>
+        </div>
+        <p id="statusText" class="status" aria-live="polite">Carregando trabalhos...</p>
+      </section>
+
+      <section id="messageArea" class="message-area" aria-live="polite"></section>
+
+      <section id="cardsGrid" class="cards-grid" aria-label="Lista de trabalhos"></section>
+    </main>
+
+    <template id="cardTemplate">
+      <article class="tcc-card">
+        <div class="tcc-card__header">
+          <span class="tag-year"></span>
+          <span class="tag-type">PDF</span>
+        </div>
+        <h2 class="tcc-card__title"></h2>
+        <div class="tcc-card__actions">
+          <a class="btn btn--primary" target="_blank" rel="noopener noreferrer">Abrir PDF</a>
+          <a class="btn btn--ghost" target="_blank" rel="noopener noreferrer">Ver no GitHub</a>
+        </div>
+      </article>
+    </template>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
