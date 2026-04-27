@@ -4,7 +4,7 @@ Repositório contendo os Trabalhos de Conclusão de Curso do Bacharelado em Ciê
 
 ---
 
-## 📋 Índice de Trabalhos por Ano
+## Índice de Trabalhos por Ano
 
 ### 2018
 
