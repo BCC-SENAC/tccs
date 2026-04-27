@@ -74,7 +74,7 @@ Repositório contendo os Trabalhos de Conclusão de Curso do Bacharelado em Ciê
 
 ---
 
-## 📁 Estrutura do Repositório
+## Estrutura do Repositório
 
 ```
 tccs/
@@ -98,23 +98,8 @@ tccs/
 
 ---
 
-## 🎓 Sobre o Programa
+## Sobre o Programa
 
 **Instituição**: Centro Universitário SENAC SP  
 **Curso**: Bacharelado em Ciência da Computação  
 **Tipo**: Trabalhos de Conclusão de Curso
-
----
-
-## 📌 Como Adicionar um Novo TCC
-
-1. Crie uma pasta com o ano (ex: `2026/`)
-2. Adicione o arquivo PDF do trabalho
-3. Atualize a tabela deste README com o ano e título
-4. Faça um commit com a mensagem descritiva
-
----
-
-## ✨ Contribuições
-
-Para contribuições ou atualizações, abra uma issue ou envie um pull request.
